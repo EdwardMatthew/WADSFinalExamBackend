@@ -6,7 +6,12 @@ class LoginSerializer(serializers.HyperlinkedModelSerializer):
         model = Login 
         fields = ('email', 'password')
 
-class NewProdSerialize(serializers.HyperlinkedModelSerializer):
+class NewProdSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = NewProd
         fields = ('name', 'desc')
+
+class RegisterSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Register
+        fields = ('email', 'password')
